@@ -47,7 +47,7 @@ class _App extends React.Component<AppProps, AppState> {
         <Header />
         <main id="main" className="main">
           <SearchBar onArtistSelect={this.onArtistSelect} />
-          {this.state.loading ? 'LOADING' : null}
+          {/* {this.state.loading ? 'LOADING' : null} */}
           <ArtistDetail artist={this.props.selectedArtist} />
         </main>
       </div>

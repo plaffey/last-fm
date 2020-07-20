@@ -1,0 +1,18 @@
+@import '../styles/variables';
+
+.header {
+  padding: 2rem;
+  border-bottom: 1px solid $color-dark-grey;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  .main {
+    font-size: 3rem;
+  }
+  .sub {
+    font-style: italic;
+    font-size: $default-font-size;
+  }
+}

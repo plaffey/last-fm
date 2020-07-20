@@ -1,0 +1,67 @@
+@import '../styles/variables';
+
+.albums-container {
+  position: relative;
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 50vh;
+  max-width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.album {
+  flex: 1;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid $color-dark-grey;
+  border-radius: 0.5rem;
+  max-width: calc(33% - 3rem);
+  position: relative;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $color-light-grey;
+  }
+}
+.album-img {
+  @media screen and (max-width: 120rem) {
+    max-width: 15rem;
+  }
+
+  @media screen and (max-width: 90rem) {
+    max-width: 12rem;
+  }
+
+  @media screen and (max-width: 60rem) {
+    max-width: 10rem;
+  }
+}
+
+.album-name {
+  max-width: calc(100% - 3rem);
+}
+
+.favorite-btn-container {
+  min-height: 4rem;
+}
+
+.favorite-btn {
+  height: 3rem;
+  width: 3rem;
+  background: url(../assets/heart-plus-outline.svg) no-repeat center;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-1rem, -0.5rem);
+  &hover,
+  &focus {
+    cursor: pointer;
+  }
+}
